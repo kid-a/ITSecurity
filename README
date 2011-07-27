@@ -1,0 +1,18 @@
+ITSecurity
+=========
+
+Introduzione
+------------
+
+OWASP[1] WebGoat[2] e` una web application scritta in Java appositamente insicura e vulnerabile
+ad una grande variet` di attacchi, creata per scopi didattici.
+
+Propone delle lezioni, ciascuna delle quali inerenti una particolare vulnerabilita`: l’obiettivo ultimo
+di WebGoat e` quello di far comprendere i meccanismi che stanno alla base dei piu` conosciuti
+attacchi alle web applications facendo indossare all’utente i panni dell’attaccante e di suggerire le
+contromisure da adottare per mettersi al riparo da tali attacchi. In una delle lezioni, ad esempio,
+gli utenti sono invitati ad utilizzare SQL Injection per rubare falsi numeri di carte di credito.
+In questo documento analizzero` e indichero` come risolvere le lezioni relative ad attacchi di tipo
+XSS e SQL Injection presenti in WebGoat 5.2. La macchina su cui WebGoat e` stata installata e`
+un sistema GNU/Linux Debian Etch 4.0r4[4], dotata di Sun Java Development Kit 1.6, Apache
+Tomcat 5.5[5]. Il browser utilizzato e` iceweasel[6] 2.0.0.19...
